@@ -3,7 +3,7 @@
   API Docs for image moderation use case.
 
 
-**POST** [http://api.gowise.co/v1/jobs/:id/tasks](http://api-dev.gowise.co/v1/jobs/:id/tasks)
+**POST** [http://api.gowise.co/v1/jobs/:id/tasks](http://api.gowise.co/v1/jobs/:id/tasks)
 
 **HEADER**: 
 
