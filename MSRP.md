@@ -58,7 +58,7 @@ POST request made to the callback_url once the task is completed
 ---
 **EXAMPLE CALLS**:
 
-**Basic:**
+**Request:**
 
 ```bash
 curl -X POST -u APIKEY: -H "Content-Type: application/json" -d '{
@@ -78,20 +78,29 @@ curl -X POST -u APIKEY: -H "Content-Type: application/json" -d '{
 }' 'http://api-sandbox.gowise.co/v1/jobs/:id/tasks'
 ```
 
-**Item Not= Found Callback:**
+**Response**:
+
+```
+{
+  "id": "e2a73239-dbc6-495b-b57e-76bfe9b0f9ca",
+  "message": "Task Accepted"
+}
+```
+
+**Callback (If Item Not Found):**
 
 ```
 { 
-  "id": "uuid",
+  "id": "e2a73239-dbc6-495b-b57e-76bfe9b0f9ca",
   "found": false
 }  
 ```
 
-**Item Found Callback:**
+**Callback (If Item Found):**
 
 ```
 { 
-  "id": "uuid",
+  "id": "e2a73239-dbc6-495b-b57e-76bfe9b0f9ca",
   "found": true
   "item_url": "http://www.saksfifthavenue.com/main/ProductDetail.jsp?PRODUCT%3C%3Eprd_id=845524446837077",
   "screenshot_url": "http://i.imgur.com/dLui22V.png",
