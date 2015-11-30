@@ -60,6 +60,9 @@ POST request made to the callback_url once the task is completed
 
 **Request:**
 
+*Please replace with your provided APIKEY and POST endpoint before sending the reqeuest.*
+*Making a request to the sandbox server will creates a callback with randomized values.*
+
 ```bash
 curl -X POST -u APIKEY: -H "Content-Type: application/json" -d '{
   "data": {
@@ -72,10 +75,10 @@ curl -X POST -u APIKEY: -H "Content-Type: application/json" -d '{
     "description": "Lace dress<br>* Crewneck and V-back<br>* Fitted bodice<br>* Even hem<br>* Tonal top stitching and panel seaming <br>* Hidden back zipper closure <br>* Fully lined <br><b>",
     "material": "55% polyester and 45% cotton shell; 96% polyester and 4% elastane combo",
     "msrp": 375,
-    "discount_price": 375,
+    "discount_price": 375
   },
   "callback_url": "http://mycompany.com"
-}' 'http://api-sandbox.gowise.co/v1/jobs/:id/tasks'
+}' 'http://api-sandbox.gowise.co/v1/jobs/18/tasks'
 ```
 
 **Response**:
