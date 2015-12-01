@@ -24,6 +24,8 @@
     "brand": "product_brand",
     "description": "description",
     "material": "material",
+    "size": "size",
+    "color": "color",
     "msrp": msrp_price,
     "discount_price": discount_price,
   },
@@ -48,7 +50,7 @@ POST request made to the callback_url once the task is completed
 ```
 { 
   "id": "uuid",
-  "found": true|false
+  "found": true|false,
   "item_url": "link_to_store_selling_item",
   "screenshot_url": "link_to_screenshot_url",
   "msrp": found_msrp_price,
@@ -74,6 +76,8 @@ curl -X POST -u APIKEY: -H "Content-Type: application/json" -d '{
     "brand": "aidan mattox",
     "description": "Lace dress<br>* Crewneck and V-back<br>* Fitted bodice<br>* Even hem<br>* Tonal top stitching and panel seaming <br>* Hidden back zipper closure <br>* Fully lined <br><b>",
     "material": "55% polyester and 45% cotton shell; 96% polyester and 4% elastane combo",
+    "size": "medium",
+    "color": "black",
     "msrp": 375,
     "discount_price": 375
   },
@@ -104,7 +108,7 @@ curl -X POST -u APIKEY: -H "Content-Type: application/json" -d '{
 ```
 { 
   "id": "e2a73239-dbc6-495b-b57e-76bfe9b0f9ca",
-  "found": true
+  "found": true,
   "item_url": "http://www.saksfifthavenue.com/main/ProductDetail.jsp?PRODUCT%3C%3Eprd_id=845524446837077",
   "screenshot_url": "http://i.imgur.com/dLui22V.png",
   "msrp": 375
