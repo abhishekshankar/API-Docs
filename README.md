@@ -15,7 +15,8 @@
 ```
 {
   "data": {
-    "image_url": "link_to_image"
+    "image_url": "link_to_image",
+    "gender": "male"|"female"
   },
   "meta": "Any valid JSON object containing metadata",
   "callback_url": "custom_url"
