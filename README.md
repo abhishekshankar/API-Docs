@@ -14,6 +14,7 @@
 
 ```
 {
+  "id": "image_identifier" (optional),
   "data": {
     "image_url": "link_to_image",
     "gender": "male"|"female"
@@ -26,8 +27,19 @@
 
 ```
 {
-  "id": "uuid",
+  "id": "image_identifier or generated uuid",
   "message": "Task Accepted"
+}
+```
+
+**RESPONSE (Duplicate ID)**:
+
+If passing an id that is the same as the id of a previous task
+
+```
+{
+  "id": "image_identifier",
+  "decision": "approve"|"decline"|"escalate"
 }
 ```
 
@@ -37,7 +49,7 @@ POST request made to the callback_url once the task is completed
 
 ```
 { 
-  "id": "uuid",
+  "id": "image_identifier or generated uuid",
   "decision": "approve"|"decline"|"escalate"
 }  
 ```
