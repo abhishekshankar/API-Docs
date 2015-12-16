@@ -39,7 +39,8 @@ If passing an id that is the same as the id of a previous task
 ```
 {
   "id": "image_identifier",
-  "decision": "approve"|"decline"|"escalate"
+  "decision": "approve"|"decline"|"escalate",
+  "reason": "string" (optional)
 }
 ```
 
@@ -50,9 +51,19 @@ POST request made to the callback_url once the task is completed
 ```
 { 
   "id": "image_identifier or generated uuid",
-  "decision": "approve"|"decline"|"escalate"
+  "decision": "approve"|"decline"|"escalate",
+  "reason": "string" (optional)
 }  
 ```
+if decision is decline, reason will be one of the following values:
+
+* sunglass
+* no_people
+* multiple_people
+* nudity 
+* unclear_face
+* underage
+
 ---
 **EXAMPLE CALLS**:
 
