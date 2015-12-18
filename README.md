@@ -17,7 +17,11 @@
   "id": "image_identifier" (optional),
   "data": {
     "image_url": "link_to_image",
-    "gender": "male"|"female"
+    "gender": "male"|"female",
+    "left": integer,
+    "top": integer,
+    "width": integer,
+    "height": integer
   },
   "meta": "Any valid JSON object containing metadata",
   "callback_url": "custom_url"
