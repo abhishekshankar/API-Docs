@@ -18,6 +18,7 @@
   "data": {
     "image_url": "link_to_image",
     "gender": "male"|"female",
+    "vip": true|false,
     "left": integer,
     "top": integer,
     "width": integer,
