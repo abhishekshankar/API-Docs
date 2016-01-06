@@ -67,6 +67,7 @@ if decision is decline, reason will be one of the following values:
 * nudity 
 * unclear_face
 * underage
+* incorrect_gender
 
 ---
 **EXAMPLE CALLS**:
