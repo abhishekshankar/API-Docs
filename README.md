@@ -62,13 +62,16 @@ POST request made to the callback_url once the task is completed
 ```
 if decision is decline, reason will be one of the following values:
 
-* sunglass
+
 * no_people
-* multiple_people
-* nudity 
-* unclear_face
 * underage
+* nudity 
+* celebrity
 * incorrect_gender
+* unclear_face
+* multiple_people
+* sunglass
+* non_south_asian
 
 ---
 **EXAMPLE CALLS**:
