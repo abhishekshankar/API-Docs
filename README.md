@@ -72,6 +72,7 @@ if decision is decline, reason will be one of the following values:
 * multiple_people
 * sunglass
 * non_south_asian
+* pornography
 
 ---
 **EXAMPLE CALLS**:
